@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .conversations-sidebar {
+    width: 280px;
+    min-width: 280px;
+  }
+
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .chat-header-actions {
+    display: block;
+  }
+
+  .message {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .chat-layout {
+    position: relative;
+  }
+
+  .conversations-sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    min-width: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .conversations-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .chat-main {
+    width: 100%;
+  }
+
+  .chat-header-actions {
+    display: block;
+  }
+
+  .message {
+    max-width: 90%;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .message-input-wrapper input {
+    font-size: 0.9rem;
+  }
+
+  .auth-card {
+    padding: 1.5rem 1rem;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .auth-container {
+    padding: 0;
+    background: #fff;
+  }
+
+  .auth-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .contacts-page,
+  .settings-page {
+    padding: 1rem;
+  }
+
+  .settings-section {
+    padding: 1rem;
+  }
+
+  .contact-item {
+    padding: 0.55rem 0.7rem;
+  }
+}
